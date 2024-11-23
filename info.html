@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylerabatt.css">
+    <title>Info</title>
+	 <script>
+	 	function navigatezurück() {
+        window.location.href = 'angebote.html';
+    }
+	 	function navigatekontakt() {
+        window.location.href = 'kontakt.html';
+    }
+			
+	 </script>
+</head>
+<body>
+	<header>
+        <img src="bilder/boneclogo.jpeg" alt="Bonez MC Logo" class="logo left-logo">
+        <h1>Informationen zur Glücksrad Aktion</h1>
+        <img src="bilder/boneclogo.jpeg" alt="Bonez MC Logo" class="logo right-logo">
+    </header>
+
+    <nav>
+		<button href="#" class="a" onclick="navigatezurück()">Zurück</button>
+    </nav>
+
+    <main>
+        <section>
+				<div class="leer2"></div>
+				<div class="regeln">
+					<h2 class="goldh2">Regeln</h2>
+					<p class="rules">
+    					<i class="fa fa-info-circle"></i> 
+    					1. Das Glücksrad darf nur <strong>1-mal am Tag</strong> gedreht werden.
+					</p>
+					<p class="rules">2. Bei Gewinn eines 5€ Gutscheins darf dieser bei dem nächsten Einkauf eingelöst werden, dies kann auch Tage danach geschehen</p>
+					<p class="rules">3. Es ist nicht möglich mehrere 5€ Gutscheine gleichzeitig einzulösen, Geschenkgutscheine können jedoch addiert werden</p>
+				</div>
+				<div class="leer"></div>
+            <div class="Gewinne">
+					<h2 class="blueh2">Mögliche Gewinne</h2>
+					<p class="wins" >1. 10% Rabatt = Nur auf die produkte, die unter Zu deiner Rabattaktion aufgelistet sind <strong>(25%)</strong></p>
+					<p class="wins">2. 20% Rabatt = Nur auf die produkte, die unter Zu deiner Rabattaktion aufgelistet sind <strong>(25%)</strong></p>
+					<p class="wins">3. 5€ Gutschein = Nur persönlich im Shop einlössbar, 5€ Rabatt <strong>(25%)</strong></p>
+					<p class="wins">4. Viel Glück = Man kann nicht immer nur gewinnen, morgen läuft es bestimmt besser <strong>(25%)</strong></p>
+				</div>
+				<div class="leer"></div>
+				<div class="Fragen">
+					<h2 class="lilah2">Bei weiteren Fragen</h2>
+					<p class="fragenp">Falls sie weitere Fragen haben:</p>
+					<div class="leer2"></div>
+					<div class="buttoninmitte">
+						<button class="fragenbutton" onclick="navigatekontakt()">Hier Fragen</button>
+					</div>
+				</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Gewonnener Rabatt</p>
+    </footer>
+</body>
+</html>

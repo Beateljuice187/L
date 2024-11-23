@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/stylejacken.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+	<title>Jacken-Store</title>
+	<script>
+	
+	function navigateHome() {
+		window.location.href = 'start.html'; 
+	}
+	function navigateImp(){
+		window.location.href = 'impressum.html';
+	}
+	function navigateKontakt(){
+		window.location.href = 'kontakt.html';
+	}
+	function navigateJak(){
+		window.location.href = 'jacken.html';
+	}
+	function navigatekonzert(){
+		window.location.href = 'tickets.html';
+	}
+	function navigatehaze() {
+		window.location.href = 'hazefan.html';
+   }
+	function navigatesale() {
+		window.location.href = 'angebote.html';
+   }
+	function navigatefaqs() {
+		window.location.href = 'Faqs.html'
+	}
+	
+	</script>
+</head>
+
+<body>
+
+<header>
+	<h1>Jacken-Store</h1>
+</header>
+
+<!-- Navigationsleiste -->
+<div class="navbar">
+    <div>
+        <a href="#home" onclick="navigateHome()">Home</a>
+        <a href="#impressum" onclick="navigateImp()">Impressum</a>
+        <a href="#kontakt" onclick="navigateKontakt()">Kontakt</a>
+        <a href="#faqs" onclick="navigatefaqs()">Faq´s</a>
+        <div class="dropdown">
+            <a href="#kleider" onclick="navigateJak()">Mehr</a>
+            <div class="dropdown-content">
+                <a href="#jacken" onclick="navigateJak()">Gameboy Fanshop</a>
+                <a href="#tshirts" onclick="navigatekonzert()">Highnachten</a>
+                <a href="#hosen" onclick="navigatehaze()">Haze76 Fan-Shop</a>
+                <a href="#angebote" onclick="navigatesale()" >Angebote</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Suche...">
+        <button type="button">Suchen</button>
+    </div>
+</div>
+
+<div class="kleider">
+
+    <!-- Karte 1 -->
+    <div class="card-wrapper" onclick="toggleCard(this)">
+        <input type="checkbox" id="card-toggle-1" class="card-toggle">
+        <div class="card">
+            <div class="innenseite">
+                <div class="content">
+                    <div class="title">Bonez MC Jacke</div>
+                    <div class="price">€69.99</div>
+                    <div class="description">
+                        Endlich ist es soweit. Mit „Wenn du mich kennst“ startet Bonez in die Promophase für sein 4. Soloprojekt „GAMEBOY“.
+                    </div>
+							<div class="leer"></div>
+                    <button onclick="addToCart('BonezJacke 69.99€'); event.stopPropagation();">Buy now</button>
+                </div>
+            </div>
+            <div class="außenseite">
+                <div class="titell">Bonez MC</div>
+                <div class="bild">
+                    <img src="bilder/bonecjacke.jpeg" alt="Bonez Jacke" width="250" height="200">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Karte 2 -->
+    <div class="card-wrapper" onclick="toggleCard(this)">
+        <input type="checkbox" id="card-toggle-2" class="card-toggle">
+        <div class="card">
+            <div class="innenseite">
+                <div class="content">
+                    <div class="title">Bonez MC T-Shirt</div>
+                    <div class="price">€49.99</div>
+                    <div class="description">
+                        Endlich ist es soweit. Mit „Wenn du mich kennst“ startet Bonez in die Promophase für sein 4. Soloprojekt „GAMEBOY“.
+                    </div>
+							<div class="leer"></div>
+                    <button onclick="addToCart('BonezTshirt 49.99€'); event.stopPropagation();">Buy now</button>
+                </div>
+            </div>
+            <div class="außenseite">
+                <div class="titell">Bonez MC</div>
+                <div class="bild">
+                    <img src="bilder/bonecshirt.jpeg" alt="Bonez T-Shirt" width="250" height="200">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Karte 3 -->
+    <div class="card-wrapper" onclick="toggleCard(this)">
+        <input type="checkbox" id="card-toggle-3" class="card-toggle">
+        <div class="card">
+            <div class="innenseite">
+                <div class="content">
+                    <div class="title">Bonez MC Hose + CD</div>
+                    <div class="price">€39.99</div>
+                    <div class="description">
+                        Endlich ist es soweit. Mit „Wenn du mich kennst“ startet Bonez in die Promophase für sein 4. Soloprojekt „GAMEBOY“.
+                    </div>
+							<div class="leer"></div>
+                    <button onclick="addToCart('BonezHose 39.99€'); event.stopPropagation();">Buy now</button>
+                </div>
+            </div>
+            <div class="außenseite">
+                <div class="titell">Bonez MC</div>
+                <div class="bild">
+                    <img src="bilder/bonechose.jpeg" alt="Bonez Hose" width="250" height="230">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="gameboy">
+    <a href="https://open.spotify.com/album/60erApRd3iIeD1dCI9I4C8?si=QQdF0JdaRRGoBfoMEKNK_g" target="_blank">
+        <img src="bilder/gameboy.jpeg" alt="Gameboy Album" height="100" width="100">
+    </a>
+</div>
+
+<footer><p>&copy; 2024 BonezShop</p></footer>
+
+<script src="js/loginjav.js"></script>
+<script src="js/script.js" defer></script>
+<script src="js/warenkorb.js"></script>
+
+</body>
+</html>

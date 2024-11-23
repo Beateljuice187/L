@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylewarenkorb.css">
+    <title>Warenkorb</title>
+    <script>
+        function navigateHome() {
+            window.location.href = 'start.html'; 
+        }
+
+        function navigateImp() {
+            window.location.href = 'impressum.html';
+        }
+
+        function navigateKontakt() {
+            window.location.href = 'kontakt.html';
+        }
+
+        function navigateJak() {
+            window.location.href = 'jacken.html';
+        }
+
+        function navigateticket() {
+            window.location.href = 'tickets.html';
+        }
+
+        function navigatehaze() {
+            window.location.href = 'hazefan.html';
+        }
+		  function navigatesale() {
+        		window.location.href = 'angebote.html';
+    	  }
+		  function navigatefaqs() {
+				 window.location.href = 'Faqs.html'
+			}
+    </script>
+</head>
+<body onload="getLoggedInUser()">
+    <header>
+        <h1>Warenkorb</h1>
+    </header>
+
+    <nav>
+        <!-- Navigationsleiste -->
+        <div class="navbar">
+            <div class="nav-links">
+                <a href="#home" onclick="navigateHome()">Home</a>
+                <a href="#impressum" onclick="navigateImp()">Impressum</a>
+                <a href="#kontakt" onclick="navigateKontakt()">Kontakt</a>
+      			  <a href="#" onclick="navigatefaqs()">Faq´s</a>
+                <div class="dropdown">
+                    <a href="#fanshop">Mehr</a>
+                    <div class="dropdown-content">
+                        <a href="#jacken" onclick="navigateJak()">Bonez MC Gameboy</a>
+                        <a href="#tickets" onclick="navigateticket()"><span class="durchgestrichen">High</span>nachten</a>
+                        <a href="#hosen" onclick="navigatehaze()">Haze76 Fan-Shop</a>
+                    <a href="#angebote" onclick="navigatesale()" >Angebote</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Suche...">
+                <button type="button">Suchen</button>
+            </div>
+        </div>
+	 	<div id="loggedInUser" class="user"></div>
+    </nav>
+	
+    <div id="loggedInUser"></div>
+    <div class="warenkorb">
+		<ul id="cartItems"></ul>
+		
+		<button id="clearCartButton" onclick="leeren()">Warenkorb leeren</button>
+		
+	 </div>	
+    <footer>
+        <p>&copy; 2024 Warenkorb | Linus Bruder</p>
+    </footer>
+
+    <script src="js/loginjav.js"></script>
+	 <script src="js/user.js"></script>
+	 <script src="js/warenkorb.js"></script>
+	 <script src="js/script.js" defer></script>
+</body>
+</html> 

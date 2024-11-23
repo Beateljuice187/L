@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrierung</title>
+  <link rel="stylesheet" type="text/css" href="css/stylelogin.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <h2>Registrieren</h2>
+    <form id="registerForm" onsubmit="registerUser(event)">
+      <div class="input-field">
+        <label for="registerUsername">Benutzername</label>
+        <input type="text" id="registerUsername" placeholder="Benutzername" required>
+      </div>
+
+      <div class="input-field">
+        <label for="registerPassword">Passwort</label>
+        <input type="password" id="registerPassword" placeholder="••••••••" required>
+      </div>
+
+      <button type="submit">Registrieren</button>
+
+      <div class="register">
+        <p>Bereits ein Account? <a href="login.html">Einloggen</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/loginjav.js"></script>
+
+</body>
+</html>

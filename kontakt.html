@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" type="text/css" href="css/stylekontakt.css">
+</head>
+<body>
+    <header>
+        <h1>Kontaktformular</h1>
+    </header>
+
+    <nav>
+        <button class="neu-button" onclick="navigateHome()">Startseite</button>
+    </nav>
+
+    <section id="content">
+        <h2>Kontaktformular</h2>
+        <form action="mailto:linusbruder@icloud.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Absenden">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meine Webseite</p>
+        <p>Diese Website gehört Linus Bruder. Falls Sie Fragen oder Anmerkungen haben, schreiben Sie mir eine E-Mail.</p>
+    </footer>
+
+    <script>
+        function navigateHome() {
+            window.location.href = 'start.html';
+        }
+    </script>
+<script src="js/warenkorb.js"></script>
+</body>
+</html>

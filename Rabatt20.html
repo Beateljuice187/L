@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylerabatt.css">
+    <title>Aktionsseite 20%</title>
+	 <script>
+		function navigatezurück() {
+			window.location.href = 'angebote.html';
+    	}
+			
+	 </script>
+</head>
+<body>
+	<header>
+        <img src="bilder/boneclogo.jpeg" alt="Bonez MC Logo" class="logo left-logo">
+        <h1>Rabatt Aktion 20%</h1>
+        <img src="bilder/boneclogo.jpeg" alt="Bonez MC Logo" class="logo right-logo">
+    </header>
+
+    <nav>
+		<button class="a" onclick="navigatezurück()">Zurück</button>
+    </nav>
+	<div class="leer"></div>
+	
+	<main>
+    <section>
+        <div class="angebote">
+				<div class="Gameboy-Bundle">
+					<img src="bilder/angebotbundle.jpeg" alt="gameboybundle" height="225" width="450">
+					<p>Statt <del>159,97€</del> nur <strong>127,97€</strong> !!</p>
+					<div class="leer2" ></div>
+        			<button class="toggle-buttonrabatt" onclick="addToCart('Gameboy Bundle 127,97 €')">Jetzt kaufen</button>
+        			<div class="textfeld">
+            		<h2>Gameboy Bundle</h2>
+            		<p>Alle Gameboy-Produkte in einem Set mit einem Rabatt von 20%!</p>
+        </div>
+    </div>
+</div>
+    </section>
+	</main>
+
+    <footer>
+        <p>&copy; Gewonnener Rabatt</p>
+    </footer>
+	 <script src="js/script.js" defer></script>
+	 <script src="js/warenkorb.js"></script>
+	 <script src="js/rabatt.js"></script>
+</body>
+</html>

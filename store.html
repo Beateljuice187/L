@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/stylestore.css">
+    <title>Bonez MC Exklusiv-Store</title>
+    <script>
+        function navigateHome() {
+            window.location.href = 'start.html';
+        }
+        function navigateImp() {
+            window.location.href = 'impressum.html';
+        }
+        function navigateKontakt() {
+            window.location.href = 'kontakt.html';
+        }
+        function navigateJak() {
+            window.location.href = 'jacken.html';
+        }
+        function navigateticket() {
+            window.location.href = 'tickets.html';
+        }
+		  function navigatehaze() {
+            window.location.href = 'hazefan.html';
+        }
+		  function navigatesale() {
+        		window.location.href = 'angebote.html';
+    	  }
+	     function navigatefaqs() {
+				window.location.href = 'Faqs.html'
+		}
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="bilder/boneclogo.jpeg" alt="Bonez MC Logo" class="logo left-logo">
+        <h1>BeatBox</h1>
+        <img src="bilder/boneclogo.jpeg" alt="Bonez MC Logo" class="logo right-logo">
+    </header>
+
+
+    <!-- Navigationsleiste -->
+    <div class="navbar">
+            <a href="#home" onclick="navigateHome()">Home</a>
+            <a href="#impressum" onclick="navigateImp()">Impressum</a>
+            <a href="#kontakt" onclick="navigateKontakt()">Kontakt</a>
+      		<a href="#" onclick="navigatefaqs()">Faq´s</a>  
+    </div>
+<div class= "leer"></div>
+        <button class="gold-button" onclick="navigateJak()">Bonez Mc Fanshop</button>
+        <button class="gold-button" onclick="navigatehaze()">Haze 76 Fanshop</button>
+        <button class="gold-button" onclick="navigatesale()">Angebote</button>
+        <button class="gold-button" onclick="navigateticket()">Tickets</button>
+<div class= "leer"></div>
+<script src="js/warenkorb.js"></script>
+    <footer><p>&copy; 2024 Linus' exklusiver Webshop</p></footer>
+</body>
+</html>

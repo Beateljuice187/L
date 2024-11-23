@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styletickets.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+	<title>Tickets-Store</title>
+	<script>
+	function navigateHome() {
+		window.location.href = 'start.html'; 
+		
+		}
+
+	function navigateImp(){
+		window.location.href = 'impressum.html';
+	
+		}
+	function navigateKontakt(){
+		window.location.href = 'kontakt.html';
+	
+		}
+	function navigateJak(){
+		window.location.href = 'jacken.html';
+		
+		}
+		
+	function navigatehaze() {
+		window.location.href = 'hazefan.html';
+        
+		}
+	function navigatesale() {
+        window.location.href = 'angebote.html';
+      }
+	function navigatefaqs() {
+			window.location.href = 'Faqs.html'
+		}
+	
+	</script>
+</head>
+
+<body>
+
+<header>
+	<h1>Tickets-Store</h1>
+</header>
+
+   <!-- Navigationsleiste -->
+    <div class="navbar">
+        <div>
+            <a href="#home"onclick="navigateHome()">Home</a>
+				<a href="#impressum"onclick="navigateImp()">Impressum</a>
+				<a href="#kontakt"onclick="navigateKontakt()">Kontakt</a>
+				<a href="#" onclick="navigatefaqs()">Faq´s</a>
+            <div class="dropdown">
+                <a href="#kleider">Fanshop</a>
+                <div class="dropdown-content">
+                    <a href="#jacken" onclick="navigateJak()">Gameboy Fanshop</a>
+                    <a href="#tshirts"><span class="durchgestrichen">High</span>nachten</a>
+                    <a href="#hosen" onclick="navigatehaze()" >Haze76 Fan-Shop</a>
+                    <a href="#angebote" onclick="navigatesale()" >Angebote</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Suchleiste -->
+        <div class="search-bar">
+            <input type="text" placeholder="Suche...">
+            <button type="button">Suchen</button>
+        </div>
+    </div>
+
+<div class="tickets">
+  <input type="checkbox" id="card-toggle" class="card-toggle">
+  <label for="card-toggle" class="card">
+    <div class="innenseite">
+      <div class="content">
+        <div class="title">Bonez MC Tickets</div>
+		  <div class="leer"></div>
+        <div class="price">€169.99</div>
+		  <div class="leer"></div>
+        <div class="description">
+          Schweren Herzens verkaufen wir auch, unsere Konzert Karten für Hochnachten am 20.12.2024 in Hamburg.
+Als Hardticket. Für den Innenraum.
+        </div>
+		  <div class="leer"></div>
+        <button onclick="addToCart('Ticket Highnachten 169.99 €')">Buy now</button>
+      </div>
+    </div>
+    <div class="außenseite">
+      <div class="titell">Bonez MC</div>
+  		<div class="leer"></div>
+		<div class="leer"></div>
+      <div class="bild">
+        <img src="bilder/boneckonzert.jpeg" alt="Bonez Konzert tickets" width="333" height="250">
+      </div>
+    </div>
+  </label>
+
+  <input type="checkbox" id="card-toggle2" class="card-toggle">
+  <label for="card-toggle2" class="card">
+    <div class="innenseite">
+      <div class="content">
+        <div class="title">Haze-Konzert Tickets</div>
+		  <div class="leer"></div>
+        <div class="price">€76.99</div>
+		  <div class="leer"></div>
+        <div class="description">
+          Ein Privat Konzert von Haze 76 exclusiv für unseren store. Passend zu seiner neuen Single Rap Star mit Mc Hero trifft der Karlsruher Rapper auf schweizer rap.
+        </div>
+		  <div class="leer"></div>
+        <button onclick="addToCart('Ticket Haze Konzert 76.99 €')">Buy now</button>
+      </div>
+    </div>
+    <div class="außenseite">
+      <div class="titell"> Haze 76</div>
+  		<div class="leer"></div>
+		<div class="leer"></div>
+      <div class="bild">
+        <img src="bilder/hazekonzert.jpeg" alt="Haze Konzert tickets" width="333" height="250">
+      </div>
+    </div>
+  </label>
+
+  <input type="checkbox" id="card-toggle3" class="card-toggle">
+  <label for="card-toggle3" class="card">
+    <div class="innenseite">
+      <div class="content">
+        <div class="title">Gzuz Konzert Tickets</div>
+		  <div class="leer"></div>
+        <div class="price">€89.99</div>
+		  <div class="leer"></div>
+        <div class="description">
+          Schweren Herzens verkaufen wir auch, unsere Konzert Karten für Das Gzuz Konzert am 23.12.2024 in Hamburg.
+Als Hardticket. Für den Innenraum.
+        </div>
+		  <div class="leer"></div>
+        <button onclick="addToCart('Gzuz Konzert Ticket 89.99 €')">Buy now</button>
+      </div>
+    </div>
+    <div class="außenseite">
+      <div class="titell">Gzuz 187</div>
+  		<div class="leer"></div>
+		<div class="leer"></div>
+      <div class="bild">
+        <img src="bilder/gzuzkonzert.jpeg" alt="Gzuz Konzert tickets" width="300" height="200">
+      </div>
+    </div>
+  </label>
+</div>
+
+
+	
+<footer><p>&copy; Ticket store</p></footer>
+<script src="js/warenkorb.js"></script>
+<script src="js/script.js" defer></script>
+</body>
+
+</html>

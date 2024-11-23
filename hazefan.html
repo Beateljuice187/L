@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haze 76 - Gangster Kollektion</title>
+  <link rel="stylesheet" href="css/stylehaze.css">
+  <script>
+   function navigateHome() {
+		window.location.href = 'start.html'; 
+	}
+	function navigateImp(){
+		window.location.href = 'impressum.html';
+	}
+	function navigateKontakt(){
+		window.location.href = 'kontakt.html';
+	}
+	function navigateJak(){
+		window.location.href = 'jacken.html';
+	}
+	function navigatekonzert(){
+		window.location.href = 'tickets.html';
+	}
+	function navigatehaze() {
+   	window.location.href = 'hazefan.html';
+    }
+	function navigatesale() {
+   	window.location.href = 'angebote.html';
+    }
+	function navigatefaqs() {
+		window.location.href = 'Faqs.html'
+		}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="bilder/hazelogo.jpeg" alt="Haze 76 Logo">
+    </div>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="navigateHome()">Home</a></li>
+      <li><a href="#" onclick="navigateImp()">Impressum</a></li>
+      <li class="dropdown">
+        <a href="#">Mehr</a>
+        <div class="dropdown-content">
+          <a href="#" onclick="navigateJak()">Bonez MC Fanpage</a>
+          <a href="#" onclick="navigatekonzert()">Konzert-Tickets</a>
+          <a href="#" onclick="navigatehaze()">Haze Fanpage</a>
+          <a href="#" onclick="navigatesale()">Angebote</a>
+        </div>
+      </li>
+      <li><a href="#" onclick="navigateKontakt()">Kontakt</a></li>
+      <li><a href="#" onclick="navigatefaqs()">Faq´s</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Haze 76 </h1>
+      <p>Karlsruhe Südweststadt</p>
+      <a href="#produkte" class="cta-btn">Jetzt shoppen</a>
+    </div>
+  </section>
+
+  <section id="produkte" class="produkte">
+    <h2>Alte Schule      |      Stara škola</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="bilder/produkt1haze.jpeg" alt="Produkt 1">
+        <h3>Haze 76 Hoodie</h3>
+        <p>Für die, die den Erfolg der Straßen leben.</p>
+        <span>€99,99</span>
+        <button onclick="addToCart('Haze 76 Hoodie 99,99€')">Jetzt kaufen</button>
+      </div>
+      <div class="product-card">
+        <img src="bilder/produkt2haze.jpeg" alt="Produkt 2">
+        <h3>Haze 76 Cap</h3>
+        <p>Luxus und Streetstyle vereint.</p>
+        <span>€49,99</span>
+        <button onclick="addToCart('Haze 76 Cap 49,99€')">Jetzt kaufen</button>
+      </div>
+      <div class="product-card">
+        <img src="bilder/produkt3haze.jpeg" alt="Produkt 3">
+        <h3>Haze 76 T-Shirt</h3>
+        <p>Für die Straße, für die Lounge.</p>
+        <span>€69,99</span>
+        <button onclick="addToCart('Haze 76 T-Shirt 69,99€')">Jetzt kaufen</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Haze 76 | Stara škola</p>
+  </footer>
+
+<script src="js/script.js" defer></script>
+<script src="js/warenkorb.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylesale.css">
+    <title>Angebote</title>
+	 <script>
+	 
+		function navigateHome() {
+			window.location.href = 'start.html'; 
+		}
+		function navigateImp(){
+			window.location.href = 'impressum.html';
+		}
+		function navigateKontakt(){
+			window.location.href = 'kontakt.html';
+		}
+		function navigateJak(){
+			window.location.href = 'jacken.html';
+		}
+		function navigatekonzert(){
+			window.location.href = 'tickets.html';
+		}
+		function navigatehaze() {
+      	window.location.href = 'hazefan.html';
+    	}
+	   function navigatefaqs() {
+			window.location.href = 'Faqs.html'
+		}
+	 </script>
+
+</head>
+<body>
+    <header>
+        <img src="bilder/boneclogo.jpeg" alt="Bonez MC Logo" class="logo left-logo">
+        <h1>Aktuelle Angebote</h1>
+        <img src="bilder/boneclogo.jpeg" alt="Bonez MC Logo" class="logo right-logo">
+    </header>
+    <nav>
+         
+    	<ul>
+      	<li><a href="#" onclick="navigateHome()">Home</a></li>
+      	<li><a href="#" onclick="navigateImp()">Impressum</a></li>
+      	<li class="dropdown">
+        		<a href="#">Mehr</a>
+        		<div class="dropdown-content">
+         		<a href="#" onclick="navigateJak()">Bonez MC Fanpage</a>
+         		<a href="#" onclick="navigatekonzert()">Konzert-Tickets</a>
+         		<a href="#" onclick="navigatehaze()">Haze Fanpage</a>
+        	</div>
+      	</li>
+      	<li><a href="#" onclick="navigateKontakt()">Kontakt</a></li>
+      	<li><a href="#" onclick="navigatefaqs()">Faq´s</a></li>
+    	</ul>
+ 
+    </nav>
+
+    <main>
+        <section>
+    			<div class="wheel-container">
+        			<div class="pointer"></div>
+        			<div id="wheel" class="wheel"></div>
+    			</div>
+    			<button class="spin-btn" onclick="spin()">Drehen</button>
+    			<p id="result"></p>
+	 			<p id="angebote"> </p>
+        </section>
+    </main>
+	<div class="leer"></div>
+    <footer>
+        <p>&copy; Angebote</p>
+    </footer>
+	 <script src="js/warenkorb.js"></script>
+	 <script src="js/angebote.js"></script>
+	 <script src="js/clear.js"></script>
+	 <script src="js/infoWarenkorb.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="css/stylelogin.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="checkLogin(event)">
+      <div class="input-field">
+        <label for="username">Benutzername</label>
+        <input type="text" id="username" placeholder="Benutzername" required>
+      </div>
+
+      <div class="input-field">
+        <label for="password">Passwort</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+      </div>
+
+      <div class="forget">
+        <label>
+          <input type="checkbox" id="rememberMe"> 
+          <span>Angemeldet bleiben</span> 
+        </label>
+      </div>
+
+      <button type="submit">Login</button>
+
+      <div class="register">
+        <p>Keinen Account? <a href="register.html">Registrieren</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/loginjav.js"></script>
+
+</body>
+</html>
